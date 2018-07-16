@@ -1,0 +1,11 @@
+body{
+    background-color: aqua;    
+}
+a{
+    font-size: 150px;
+    color: firebrick;
+    transition: color 2s ease-in 1s font-size: 200px;
+}
+a:hover{
+    color: orchid;
+}
