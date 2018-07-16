@@ -1,0 +1,48 @@
+#jednostki-miary > div {
+    background-color: rgba(106, 106, 216, 0.6);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#piksele {
+    width: 400px;
+}
+
+#em {
+    width: 50em;
+}
+
+#procenty {
+    width: 50%;
+}
+
+#vh {
+    width: 50vh;
+}
+
+.inline-block-inner {
+    display: inline-block;
+    height: 300px;
+    background-color: red;
+    width: 33.33333%;
+    float: left;
+    /* wlasciwosc float pozwala na oplywanie elementu, kiedy ustawimy kierunek (left, right), to de facto mowimy, zeby element przykleil sie do danej krawedzi (np. left) i zostal oplywany ze strony przeciwnej. Wlasciwosc float wplywa na flow dokument - nie pozwala policzyc wysokosci rodzica, ktory trzyma elementy oplywane. Aby przywrocic flow dokumentu, nalezy wylaczyc float - uzyc wlasciwosci clear na elemencie, ktory znajduje sie za ostatnim elementem z wlaczona wlasciwoscia float */
+}
+
+.clear {
+    clear: both;
+}
+
+.green {
+    height: 400px;
+    width: 50%;
+    background-color: green;
+    
+    /* tranzycje podajemy przy stanie poczatkowym dla danego elementu, zeby uzyskac efekt animacji w dwie strony */
+    transition: width 2s linear 0s, background-color 2s linear 2s;
+}
+
+.green:hover {
+    width: 70%;
+    background-color: red;
+}
